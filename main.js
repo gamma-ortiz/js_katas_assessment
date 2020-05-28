@@ -13,7 +13,7 @@ function add(x, y) {
 console.log('kata01:', add(5000, 100))
 console.log('kata01:', add(1200, 2160))
 console.log('kata01:', add(500, 3200))
-console.log('kata01:', add(5110, 3900))
+
 
 
 
@@ -35,7 +35,8 @@ function multiply(x, y) {
     return total
 }
 console.log('kata02:', multiply(5, 6))
-
+console.log('kata02:', multiply(2, 4))
+console.log('kata02:', multiply(10, 6))
 
 
 //KATA 03: Power/Exponentiaton
@@ -55,7 +56,9 @@ function power(x, y) {
     }
     return total
 }
-console.log('kata03:',power(4, 8))
+console.log('kata03:', power(2, 8))
+console.log('kata03:', power(3, 5))
+console.log('kata03:', power(11, 8))
 
 // KATA 04: Factorial
 
@@ -65,14 +68,24 @@ You may not use built-in math operators or functions (such as the * multiplicati
 A factorial multiplies a given number by every number below it. For example, "5 factorial" (usually symbolized by 5! in Mathematics) would be:      5 * 4 * 3 * 2 * 1 = 120
 */
 
-function factorial() {
-
+function factorial(x) {
+    let total = 1
+    for (let index = 0; x > 1; x -= 1) {
+        total = multiply(x, total)
+    }
+    return total
 }
 
-//  BONUS KATA: Fibonacci
+
+
+console.log('kata04:', factorial(5))
+console.log('kata04:', factorial(7))
+console.log('kata04:', factorial(2))
+
+//  BONUS KATA05: Fibonacci Sequence
 
 /*
-Write a function named "Fibonacci" which takes an argument n and returns the nth Fibonacci number. 
+Write a function named "Fibonacci" which takes an argument n and returns the nth Fibonacci number.
 You may not use built-in math operators or functions (such as the * multiplication operator). Instead, you will use functions you wrote in earlier katas to write this function.
 For example, calling fibonacci(8) should return a result of 13. The fibonnaci sequence begins:
 
@@ -81,7 +94,13 @@ For example, calling fibonacci(8) should return a result of 13. The fibonnaci se
 So, the number in brackets is the 8th Fibonacci number.
 */
 
-function fibonacci() {
+// This is the fartest I can go..hehehe really fun stuff!!!!
 
-}
-
+// function fibonacci(x) {
+//     let total = 1
+//     for (let index = 0; x < 1; x += 1) {
+//         total = factorial(x, total)
+//     }
+//     return total
+// }
+// console.log('kata05:', fibonacci(8))
