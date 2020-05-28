@@ -94,7 +94,7 @@ For example, calling fibonacci(8) should return a result of 13. The fibonnaci se
 So, the number in brackets is the 8th Fibonacci number.
 */
 
-// This is the fartest I can go..hehehe really fun stuff!!!!
+// This is the farest I can go..hehehe really fun stuff!!!!
 
 // function fibonacci(x) {
 //     let total = 1
